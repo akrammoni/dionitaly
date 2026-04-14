@@ -1,46 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dion Italy | Portfolio</title>
+  <title>Akram Moni | Portfolio</title>
+
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #0f0f0f;
       color: #ffffff;
-      line-height: 1.6;
     }
 
     header {
-      padding: 80px 20px;
+      padding: 90px 20px;
       text-align: center;
-      background: #1a1a1a;
+      background: linear-gradient(135deg, #1a1a1a, #111);
     }
 
     header h1 {
-      font-size: 48px;
+      font-size: 52px;
       margin: 0;
     }
 
-    section {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
+    header p {
+      color: #aaa;
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .section-title {
+      font-size: 28px;
+      margin-bottom: 20px;
+      border-left: 4px solid #4f9cff;
+      padding-left: 10px;
+    }
+
+    .card {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
     }
 
     img {
       width: 100%;
-      border-radius: 8px;
+      border-radius: 10px;
       margin-top: 10px;
     }
 
-    .box {
-      background: #1a1a1a;
-      padding: 20px;
-      border-radius: 10px;
-      margin-top: 20px;
+    ul {
+      padding-left: 20px;
+      color: #ccc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      color: #777;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -48,23 +73,29 @@
 <body>
 
 <header>
-  <h1>Dion Italy</h1>
-  <p>WordPress Website Development Project</p>
+  <h1>Akram Moni</h1>
+  <p>WordPress Developer • UI Customization • Web Projects</p>
 </header>
 
-<section>
-  <h2>Overview</h2>
-  <div class="box">
-    <p>
-      This project showcases a custom WordPress website built with theme customization,
-      plugin logic, and performance-focused structure.
-    </p>
-  </div>
-</section>
+<div class="container">
 
-<section>
-  <h2>Skills Used</h2>
-  <div class="box">
+  <div class="section-title">Overview</div>
+  <div class="card">
+    This portfolio showcases a WordPress website project built with custom theme
+    modifications, plugin integration, and UI structuring.
+  </div>
+
+  <div class="section-title">Project Screenshots</div>
+  <div class="card">
+    <p>Homepage Preview:</p>
+    <img src="assets/images/screenshot1.png" />
+
+    <p>Inner Page Preview:</p>
+    <img src="assets/images/screenshot2.png" />
+  </div>
+
+  <div class="section-title">Skills Used</div>
+  <div class="card">
     <ul>
       <li>WordPress CMS</li>
       <li>PHP Theme Customization</li>
@@ -72,21 +103,17 @@
       <li>CSS Styling</li>
     </ul>
   </div>
-</section>
 
-<section>
-  <h2>Project Preview</h2>
-  <div class="box">
-    <p>Add screenshots of your site here later.</p>
+  <div class="section-title">About This Project</div>
+  <div class="card">
+    Custom-built WordPress solution focusing on layout structure, performance, and usability.
   </div>
-</section>
 
-<section>
-  <h2>Contact</h2>
-  <div class="box">
-    <p>Built and maintained by Dion</p>
-  </div>
-</section>
+</div>
+
+<footer>
+  Built and maintained by Akram Moni
+</footer>
 
 </body>
 </html>
