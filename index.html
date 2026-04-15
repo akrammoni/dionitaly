@@ -50,16 +50,6 @@
       margin-bottom: 20px;
     }
 
-    /* FIXED IMAGE STYLE */
-    .card img {
-      width: 100%;
-      max-width: 700px;
-      height: auto;
-      display: block;
-      margin: 10px auto 25px;
-      border-radius: 10px;
-    }
-
     ul {
       padding-left: 20px;
       color: #ccc;
@@ -70,6 +60,53 @@
       padding: 40px;
       color: #777;
       font-size: 14px;
+    }
+
+    /* SLIDER STYLES */
+    .slider-container {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .slider {
+      display: flex;
+      overflow-x: auto;
+      gap: 10px;
+      scroll-behavior: smooth;
+      padding: 10px;
+    }
+
+    .slider::-webkit-scrollbar {
+      display: none;
+    }
+
+    .slider img {
+      width: 200px;
+      height: auto;
+      border-radius: 8px;
+      flex-shrink: 0;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .slider img:hover {
+      transform: scale(1.05);
+    }
+
+    .arrow {
+      background: #222;
+      color: white;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 50%;
+      margin: 0 5px;
+    }
+
+    .arrow:hover {
+      background: #4f9cff;
     }
   </style>
 </head>
@@ -92,35 +129,26 @@
   <div class="section-title">Project Screenshots</div>
   <div class="card">
 
-    <p><strong>Homepage Preview</strong></p>
-    <img src="images/screenshot1.png" alt="Screenshot 1">
+    <div class="slider-container">
 
-    <p><strong>Inner Page Preview</strong></p>
-    <img src="images/screenshot2.png" alt="Screenshot 2">
+      <button class="arrow left" onclick="scrollSlider(-1)">❮</button>
 
-    <p><strong>Screenshot 3</strong></p>
-    <img src="images/screenshot3.png" alt="Screenshot 3">
+      <div class="slider" id="slider">
+        <img src="images/screenshot1.png">
+        <img src="images/screenshot2.png">
+        <img src="images/screenshot3.png">
+        <img src="images/screenshot4.png">
+        <img src="images/screenshot5.png">
+        <img src="images/screenshot6.png">
+        <img src="images/screenshot7.png">
+        <img src="images/screenshot8.png">
+        <img src="images/screenshot9.png">
+        <img src="images/screenshot10.png">
+      </div>
 
-    <p><strong>Screenshot 4</strong></p>
-    <img src="images/screenshot4.png" alt="Screenshot 4">
+      <button class="arrow right" onclick="scrollSlider(1)">❯</button>
 
-    <p><strong>Screenshot 5</strong></p>
-    <img src="images/screenshot5.png" alt="Screenshot 5">
-
-    <p><strong>Screenshot 6</strong></p>
-    <img src="images/screenshot6.png" alt="Screenshot 6">
-
-    <p><strong>Screenshot 7</strong></p>
-    <img src="images/screenshot7.png" alt="Screenshot 7">
-
-    <p><strong>Screenshot 8</strong></p>
-    <img src="images/screenshot8.png" alt="Screenshot 8">
-
-    <p><strong>Screenshot 9</strong></p>
-    <img src="images/screenshot9.png" alt="Screenshot 9">
-
-    <p><strong>Screenshot 10</strong></p>
-    <img src="images/screenshot10.png" alt="Screenshot 10">
+    </div>
 
   </div>
 
@@ -144,6 +172,18 @@
 <footer>
   Built and maintained by Akram Moni
 </footer>
+
+<script>
+  function scrollSlider(direction) {
+    const slider = document.getElementById('slider');
+    const scrollAmount = 250;
+
+    slider.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
 
 </body>
 </html>
