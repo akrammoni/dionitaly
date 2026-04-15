@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Akram Moni | Portfolio</title>
+  <title>Akram Moni | Web Developer Portfolio</title>
 
   <style>
     body {
@@ -71,6 +71,11 @@
       font-size: 14px;
     }
 
+    a {
+      color: #4f9cff;
+      text-decoration: none;
+    }
+
     /* SLIDER */
     .slider-container {
       display: flex;
@@ -94,11 +99,6 @@
       border-radius: 8px;
       cursor: pointer;
       flex-shrink: 0;
-      transition: transform 0.2s ease;
-    }
-
-    .slider img:hover {
-      transform: scale(1.05);
     }
 
     .arrow {
@@ -141,26 +141,46 @@
 <body>
 
 <header>
-  <!-- CHANGE THIS TO YOUR IMAGE -->
-  <img src="images/profile.png" class="profile-img" alt="Profile">
-
+  <img src="images/profile.png" class="profile-img">
   <h1>Akram Moni</h1>
-  <p>WordPress Developer • UI Customization • Web Projects</p>
+  <p>Web Developer • WordPress • Frontend • Linux</p>
 </header>
 
 <div class="container">
 
+  <!-- OVERVIEW -->
   <div class="section-title">Overview</div>
   <div class="card">
-    This portfolio showcases a WordPress website project built with custom theme
-    modifications, plugin integration, and UI structuring.
+    Web developer focused on building functional, responsive, and user-friendly websites. 
+    Experienced in WordPress customization, frontend development, and deploying projects using GitHub Pages and live domains.
   </div>
 
-  <div class="section-title">Project Screenshots</div>
+  <!-- PROJECT 1 -->
+  <div class="section-title">Project: DionItaly Website</div>
   <div class="card">
 
-    <div class="slider-container">
+    <p><strong>Description:</strong></p>
+    <ul>
+      <li>Customized WordPress theme using PHP and CSS</li>
+      <li>Structured responsive layout for mobile and desktop</li>
+      <li>Integrated plugins for UI and performance optimization</li>
+      <li>Deployed using both custom domain and GitHub Pages</li>
+    </ul>
 
+    <p><strong>Links:</strong></p>
+    <p>
+      Live Site:<br>
+      <a href="https://dionitaly.com" target="_blank">dionitaly.com</a>
+    </p>
+
+    <p>
+      GitHub Pages:<br>
+      <a href="https://akrammoni.github.io/dionitaly/" target="_blank">
+        akrammoni.github.io/dionitaly/
+      </a>
+    </p>
+
+    <div class="slider-container">
       <button class="arrow" onclick="scrollSlider(-1)">❮</button>
 
       <div class="slider" id="slider">
@@ -177,38 +197,42 @@
       </div>
 
       <button class="arrow" onclick="scrollSlider(1)">❯</button>
-
     </div>
 
   </div>
 
-  <div class="section-title">Skills Used</div>
+  <!-- PROJECT 2 -->
+  <div class="section-title">Project: Responsive Landing Page</div>
   <div class="card">
     <ul>
-      <li>WordPress CMS</li>
-      <li>PHP Theme Customization</li>
-      <li>JavaScript</li>
-      <li>CSS Styling</li>
-      <li>AI</li>
-      <li>Linux</li>
+      <li>Built responsive landing page using HTML, CSS, and JavaScript</li>
+      <li>Implemented clean UI layout and mobile-first design</li>
+      <li>Optimized for performance and fast loading</li>
+      <li>Practiced component structuring and reusable styling</li>
     </ul>
   </div>
 
-  <div class="section-title">About This Project</div>
+  <!-- SKILLS -->
+  <div class="section-title">Skills</div>
   <div class="card">
-    Custom-built WordPress solution focusing on layout structure, performance, and usability.<br><br>
-    
-    <p>
-      <strong>Live Site:</strong><br>
-      <a href="https://dionitaly.com" target="_blank" style="color:#4f9cff;">
-        dionitaly.com
-      </a>
-    </p>
+    <ul>
+      <li>WordPress</li>
+      <li>PHP</li>
+      <li>JavaScript</li>
+      <li>CSS</li>
+      <li>Linux</li>
+      <li>AI Tools</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </div>
 
+  <!-- GITHUB -->
+  <div class="section-title">GitHub</div>
+  <div class="card">
     <p>
-      <strong>Project Demo (GitHub Pages):</strong><br>
-      <a href="https://akrammoni.github.io/dionitaly/" target="_blank" style="color:#4f9cff;">
-        akrammoni.github.io/dionitaly/
+      View my projects and code:<br>
+      <a href="https://github.com/" target="_blank">
+        github.com/
       </a>
     </p>
   </div>
